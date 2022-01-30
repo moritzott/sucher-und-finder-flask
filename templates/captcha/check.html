@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %} Überprüfung {% endblock %}
+
+{% block content %}
+    <div class="w3-container" style="max-width: 600px;" id="divMain">
+        <h1 class="w3-center">Überprüfung</h1>
+        <p>
+            Um unsachgemäße Benutzung des Dienstes zu verhindern,
+            müssen wir sichergehen, dass Sie ein Mensch sind und kein
+            automatisiertes Schadprogramm.
+        </p>
+        <p>
+            Bite geben Sie die Zeichen in der Grafik ein und drücken auf 'Weiter'.
+        </p>
+        <p>
+            Wenn alles passt, können Sie den Registrierungsprozess forsetzen.
+        </p>
+        <form action="/register" method="post">
+            <input type="hidden" name="hashed-captcha" value="">
+            <br><br>
+            <div class="w3-center">
+                <img src="" alt="[Captcha Bild]">
+            </div>
+            <br>
+            <label class="" for="captcha-string">
+                Zeichen:
+            </label><br>
+            <input class="w3-input w3-border" type="text" name="captcha-string" id="captcha-string" required>
+            <br><br>
+
+            <!-- Captach-Abfrage hier einfügen! -->
+            <div class="w3-center">
+                <a href="/" class="w3-button w3-border reducedLinkWidth w3-margin-bottom">&larr; Zurück</a>
+                <!-- <a href="/index.php" class="w3-button w3-border reducedLinkWidth w3-margin-bottom">&larr; Zurück</a> -->
+                <input type="submit" value="Weiter &rarr;" class="w3-button w3-border w3-margin-bottom">
+            </div>
+        </form>
+
+
+    </div>
+{% endblock %}

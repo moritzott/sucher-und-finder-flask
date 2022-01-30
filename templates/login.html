@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title  %}
+    Anmelden
+{% endblock %}
+
+{% block content %}
+    <div class="w3-container"style="max-width: 600px;" id="divMain">
+        <h1 class="w3-center">Anmeldung</h1>
+        <form class="w3-margin" action="/login-user" method="POST">
+        <br><br>
+            <label class="" for="email">Email:</label>
+            <input class="w3-input w3-border" type="text" id="email" name="email" required>
+            <br><br>
+            <label class="" for="password">Passwort:</label>
+            <input class="w3-input w3-border" type="password" name="password" id="password" required>
+            <br><br>
+            <div class="w3-center">
+                <a href="/" class="w3-button w3-border reducedLinkWidth w3-margin-bottom">&larr; Zurück</a>
+                <input class="w3-button w3-border reducedLinkWidth w3-margin-bottom" type="submit" value="Anmelden">
+            </div>    
+        </form>
+        <!-- OPTION: PASSWORT VERGESSEN!! -->
+        <p class="w3-right w3-margin"><a href="#">Passwort vergessen?</a></p>
+    </div>
+
+{% endblock %}

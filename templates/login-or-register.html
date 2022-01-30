@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Anmelden oder Registrieren
+{% endblock %}
+
+{% block content %}
+    <div class="w3-container w3-center" style="max-width: 600px;" id="divMain">
+        <h1 class="w3-center">Schon registriert?</h1>
+        <p>
+            Sie müssen sich zuerst anmelden.
+            Sollten Sie noch keine Anmeldedaten haben, müssen Sie sich zuerst kurz registrieren.
+        </p>
+        <a href="/login" class="w3-button w3-border w3-margin">Anmelden</a>
+        <a href="/captcha/check" class="w3-button w3-border w3-margin">Registrieren</a>
+        <a href="/" class="w3-button w3-border w3-margin">&larr; Zurück</a>
+    </div>
+
+{% endblock %}

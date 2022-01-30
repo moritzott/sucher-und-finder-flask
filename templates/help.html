@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title  %}
+    Hilfe
+{% endblock %}
+
+
+{% block content %}
+    <div class="w3-container w3-center " style="max-width: 600px;" id="divMain">
+        <h1 class="w3-center">Hilfe</h1>
+        <p>
+            Sucher & Finder ist eine Webanwendung zur Vermisstensuche nach Katastrophenfällen.
+            Nach Katastrophenfällen sind oft viele Menschen obdachlos und müssen in Unterkünften
+            untergebracht werden. Dabei kann leicht der Überblick verloren gehen, wer sicher 
+            untergebracht wurde und wer noch als vermisst gilt. 
+                
+        </p>
+        <p>
+            Private Personenhaushalte und staatliche Notunterkünfte
+            können mit dieser Anwendung aufgenommene Personen registrieren, denen sie Obdach gewährt haben (Finder).
+            Gleichzeitig haben die Polizei und ähnliche Behörden die Möglichkeit,
+            nach Personen und ihrem Aufenthaltsort zu suchen (Sucher), um Vermisstenanzeigen gegebenenfalls 
+            schneller aufzuklären. Aus Sicherheitsgründen haben nur polizeiliche 
+            Behörden die Möglichkeit, nach Personen zu suchen.
+        </p>
+        <p>
+            Sie können bei weiteren Fragen Kontakt zum Administrator aufnehmen:
+        </p>
+        <p>
+            {{ contact.name }}, {{ contact.phone }}, {{ contact.email }} 
+        </p>
+        <a href="/" class="w3-button w3-border w3-margin">&larr; Zurück</a>
+    </div>
+
+{% endblock %}

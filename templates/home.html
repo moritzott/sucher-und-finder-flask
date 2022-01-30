@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %} Sucher & Finder {% endblock %}
+
+{% block content %}
+    <div class="w3-container w3-center " style="max-width: 600px;" id="divMain">
+        <h1 class="w3-center">Sucher & Finder</h1>
+        <p>
+            Möchten Sie nach einer Person suchen, wählen Sie bitte 'Sucher'.
+            Beachten Sie aber, dass aus Sicherheitsgründen nur polizeiliche Behörden
+            nach Personen in der Datenbank suchen können.
+            Möchten Sie eine in Obdach aufgenommene Person registrieren (staatliche, private Notunterkünfte sowie Privatwohnungen),
+            wählen Sie 'Finder'.
+            Unter 'Hilfe' erhalten Sie Informationen zur Bedienung und Einrichtung der Anwendung.
+        </p>
+        <div>
+            <a href="/login-or-register" class="w3-button w3-border w3-margin">Sucher</a>   
+            <a href="/login-or-register" class="w3-button w3-border  w3-margin">Finder</a>
+            <a href="/login" class="w3-button w3-border w3-margin">Anmelden</a>
+            <a href="/help" class="w3-button w3-border w3-margin">Hilfe</a>               
+        </div>
+    </div>
+{% endblock %}

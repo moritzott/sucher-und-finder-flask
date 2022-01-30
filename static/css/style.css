@@ -1,0 +1,17 @@
+#divMain {
+    margin: 0 auto;
+    margin-top: 40px
+}
+
+a {
+    width: 80%;
+}
+
+
+.reducedLinkWidth {
+    width: auto;
+}
+
+.registerSubmit {
+    width: 80%;
+}

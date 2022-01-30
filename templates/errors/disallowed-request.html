@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title  %}
+    Nicht erlaubter Aufruf
+{% endblock %}
+
+{% block content %}
+    <div class="w3-container w3-center" style="max-width: 600px;" id="divMain">
+        <h1>Die Aufruf-Methode der Seite ist nicht erlaubt.</h1>
+        <p>
+            Sie haben versucht, die Seite über eine Methode aufzurufen,
+            die nicht erlaubt ist.
+        </p>
+        <p>
+            Bei Fragen hierzu wenden Sie sich bitte an den Administrator
+            und schildern den Fall:
+        </p>
+        <p>
+            {{ contact.name }}, {{ contact.phone }}, {{ contact.email }}
+        </p>
+        <a class="w3-button w3-border w3-margin" href="/">Startseite</a>
+    </div>
+{% endblock %}
