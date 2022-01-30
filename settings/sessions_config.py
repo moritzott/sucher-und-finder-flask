@@ -14,7 +14,7 @@
     
     
 #     Wenn Sie selbst eine Instanz der Anwendung bei sich starten
-#     wollen, ändern sie im assoziativen Array $roles die Werte
+#     wollen, ändern sie im Dictionary *roles* die Werte
 #     ('aragorn',...)! Es wäre unsicher, die Werte einfach stehen zu lassen,
 #     weil die Anwendung auf Github publiziert wird. 
 #     Denken Sie sich einfach andere Werte aus.
